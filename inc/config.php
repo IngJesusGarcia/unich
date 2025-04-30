@@ -1,10 +1,10 @@
 <?php 
 //contraseña
-$passs="";
+$passs="VoYSg5Rbj8tf61CXgZml";
 //nombre de base de datos 
-$bd="pagos";
+$bd="bkpl3ehmvxx09o75gi2e";
 //nombre de usuario 
-$user="root";
+$user="uopeepgpv9rwhrey";
 //nombre de la empresa a la que le daras el servicio
 $empresa="UNICH";
 
@@ -33,7 +33,7 @@ $config = array(
 	); ?>
 
 <?php
-	$dbhost="localhost";
+	$dbhost="bkpl3ehmvxx09o75gi2e-mysql.services.clever-cloud.com";
 	$dbname="$bd";
 	$dbuser="$user";
 	$dbpass="$passs";

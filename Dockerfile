@@ -1,12 +1,16 @@
-# Usa la imagen oficial de PHP con Apache
 FROM php:8.2-apache
 
-# Copia todos los archivos del proyecto al servidor web
+# Instala extensiones necesarias (opcional)
+RUN docker-php-ext-install mysqli pdo pdo_mysql
+
+# Habilita el módulo rewrite de Apache (útil para frameworks o rutas amigables)
+RUN a2enmod rewrite
+
+# Copia el contenido de tu proyecto al directorio web
 COPY . /var/www/html/
 
-# Asigna los permisos adecuados
+# Establece permisos correctos
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html
 
-# Render usa el puerto 10000 internamente, pero no hace falta exponerlo manualmente
 EXPOSE 80

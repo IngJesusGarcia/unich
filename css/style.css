@@ -1,0 +1,930 @@
+
+
+
+#delay_demo {
+  position: relative;
+  width: 900px;
+  height: 700px;
+  margin:0 auto;
+  padding: 50px;
+}
+#dd_main {
+  width: 100px;
+  height: 100px;
+  position:relative; 
+   top: 40vh;
+  left: 40vw;
+  border-radius: 50px;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+  background: #EEE url(http://www.clker.com/cliparts/M/9/l/f/D/3/full-moon.svg) no-repeat;
+  background-size: 160% 150%;
+}
+#delay_demo .center {
+ /* width: 100vw;*/
+  position: absolute;
+  bottom:20px;
+}
+
+#v1{
+  width: 24px;
+  height: 24px;
+  border-radius: 25% !important; 
+  position:relative;
+  top: 17%;
+  left: 42%;
+  background:  #a5bf0a no-repeat;
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+          transform: translate3d(0,0,0);
+          transform: scale(1,1) rotate(-95deg) ; 
+
+}
+#v2{
+  width: 30px;
+  height:30px;
+  
+  border-radius: 25% !important;;
+  position:relative;
+  top: 17%;
+  left: 46%;
+
+  background: #a5bf0a no-repeat;
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+          transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#v3{
+  width: 20px;
+  height: 20px;
+  border-radius: 15% !important;;
+  position:relative;
+
+  top: 14%;
+  left: 55%;
+  background: #a5bf0a no-repeat;
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+          transform: translate3d(0,0,0);
+          transform: scale(1,1) rotate(-95deg) ; 
+}
+
+#a1{
+   width: 30px;
+  height: 30px;
+  border-radius: 15% !important;
+  position:relative;  
+  top: 15%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 53%;
+  
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#a2{
+   width: 30px;
+  height: 30px;
+  border-radius: 15% !important;  position:relative;  
+  top: 10%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 48%;
+
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#v4{
+   width: 28px;
+  height: 28px;
+  border-radius: 15% !important;  position:relative; 
+   top: 30px;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 58%;
+  background: #a5bf0a no-repeat;
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#a3{
+   width: 50px;
+  height: 50px;
+  border-radius: 15% !important;  position:relative;  
+  top: 7%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 56%;
+  
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#v5{
+   width: 20px;
+  height: 20px;
+  border-radius: 15% !important;  position:relative;  
+  top: -1 %;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 52%;
+  background: #a5bf0a  no-repeat;
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#a4{
+   width: 40px;
+  height: 40px;
+  border-radius: 15% !important;  position:relative; 
+   top: -9%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 64%;
+  
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#v6{
+   width: 24px;
+  height: 24px;
+  border-radius: 15% !important;  position:relative;
+    top: -7.5%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 64%;
+  background: #a5bf0a  no-repeat;
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#v7{
+   width: 20px;
+  height: 20px;
+  border-radius: 15% !important;  position:relative; 
+   top: -5.5%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 64%;
+  background: #a5bf0a  no-repeat;
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#v8{
+   width: 20px;
+  height: 20px;
+  border-radius: 15% !important;  position:relative;  
+  top: -8.5%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 60%;
+  background: #a5bf0a  no-repeat;
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#a5{
+   width: 50px;
+  height: 50px;
+  border-radius: 15% !important;  position:relative; 
+   top: -16%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 69%;
+ 
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#v9{
+   width: 20px;
+  height: 20px;
+  border-radius: 15% !important;  position:relative;
+    top: -14%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 68%;
+  background: #a5bf0a  no-repeat;
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#a6{
+   width: 40px;
+  height: 40px;
+  border-radius: 15% !important;  position:relative;  
+  top: -19%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 61%;
+  
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#a7{
+   width: 30px;
+  height: 30px;
+  border-radius: 15% !important;  position:relative;  
+  top: -24%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 55%;
+
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+
+#v10{
+   width: 18px;
+  height: 18px;
+  border-radius: 15% !important;  position:relative;  
+  top: -33%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 51%;
+  background: #a5bf0a  no-repeat;
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#a8{
+   width: 40px;
+  height: 40px;
+  border-radius: 15% !important;  position:relative; 
+   top: -21%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 49%;
+  
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#v11{
+   width: 20px;
+  height: 20px;
+  border-radius: 15% !important;  position:relative;
+    top: -32%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 61%;
+  background: #a5bf0a  no-repeat;
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#v12{
+   width: 30px;
+  height: 30px;
+  border-radius: 15% !important;  position:relative; 
+   top: -35%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 56%;
+  background: #a5bf0a  no-repeat;
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#v13{
+   width: 22px;
+  height: 22px;
+  border-radius: 15% !important;  position:relative; 
+  top: -36%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 44%;
+  background: #a5bf0a  no-repeat;
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#a9{
+   width: 50px;
+  height: 50px;
+  border-radius: 15% !important;  position:relative;
+  top: -35%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 38%;
+
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#v14{
+   width: 23px;
+  height: 23px;
+  border-radius: 15% !important;  position:relative; 
+   top: -43%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 46%;
+  background: #a5bf0a  no-repeat;
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#v15{
+   width: 25px;
+  height: 25px;
+  border-radius: 15% !important;  position:relative;  
+  top: -42%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 46.5%;
+  background: #a5bf0a  no-repeat;
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#a10{
+   width: 50px;
+  height: 50px;
+  border-radius: 15% !important;  position:relative;  
+  top: -46%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 51%;
+
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#a11{
+   width: 40px;
+  height: 40px;
+  border-radius: 15% !important;  position:relative;
+    top: -48%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 44.5%;
+  
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#a12{
+   width: 30px;
+  height: 30px;
+  border-radius: 15% !important;  position:relative;
+  top: -51%;
+  
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 56%;
+  
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#a13{
+   width: 28px;
+  height: 28px;
+  border-radius: 15% !important;  position:relative; 
+   top: -56.5%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 61%;
+ 
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#v16{
+   width: 20px;
+  height: 20px;
+  border-radius: 15% !important;  position:relative;  
+  top: -76%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 53%;
+  background: #a5bf0a no-repeat;
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#v17{
+   width: 20px;
+  height: 20px;
+  border-radius: 15% !important;  position:relative;  
+  top: -69%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 59%;
+  background: #a5bf0a  no-repeat;
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#v18{
+   width: 25px;
+  height: 25px;
+  border-radius: 15% !important;  position:relative;  
+  top: -67%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 51%;
+  background: #a5bf0a  no-repeat;
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#v19{
+   width: 22px;
+  height: 22px;
+  border-radius: 15% !important;  position:relative; 
+   top: -65%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 63%;
+  background: #a5bf0a  no-repeat;
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#v20{
+   width: 19px;
+  height: 19px;
+  border-radius: 15% !important;  position:relative;  
+  top: -68%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 67%;
+  background: #a5bf0a  no-repeat;
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#v21{
+   width: 21px;
+  height: 21px;
+  border-radius: 15% !important;  position:relative;  
+  top:-69%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 58%;
+  background: #a5bf0a  no-repeat;
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transform: scale(1,1) rotate(-95deg) ; 
+}
+#letrai1{
+   width: 27px;
+  height: 27px;
+  border-radius: 15% !important;  position:relative; 
+   top: -50%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 40%;
+  color:#fff;
+  font-size: 86px; 
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+
+}
+#letrap1{
+   width: 27px;
+  height: 27px;
+  border-radius: 15% !important; 
+  position:relative; 
+  top: -54.6%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 44%;
+  color:#fff;
+
+  font-size: 85px;
+ 
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+#letrap2{
+  width: 27px;
+  height: 27px;
+  border-radius: 15% !important; 
+  position:relative; 
+  top: -59%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 50%;
+  color:#fff;
+  font-size: 85px;
+ 
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+#letray{
+   width: 27px;
+  height: 27px;
+  border-radius: 15% !important;  position:relative;
+  top: -63.5%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 56%;
+  color:#fff;
+  font-size: 85px;
+ 
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+#letrat{
+   width: 27px;
+  height: 27px;
+  border-radius: 15% !important; 
+   position:relative; 
+  top: -68%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 62.5%;
+  color:#fff;
+  font-size: 85px;
+  
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+#letrat2{
+  width: 27px;
+  height: 27px;
+  border-radius: 15% !important;  position:relative;
+  top: -72.6%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 68.5%;
+  color:#fff;
+  font-size: 85px;
+  
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+#letrae{
+   width: 27px;
+  height: 27px;
+  border-radius: 15% !important;  
+  position:relative;  
+  top: -77.2%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 74.5%;
+  color:#fff;
+  font-size: 85px;
+  
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+#letrac{
+   width: 27px;
+  height: 27px;
+  border-radius: 15% !important;  
+  position:relative;  
+  top: -81.8%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 80.5%;
+  color:#fff;
+  font-size: 85px;
+  
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+#letrah{
+   width: 27px;
+  height: 27px;
+  border-radius: 15% !important;
+    position:relative;  
+    top: -86.3%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 86.5%;
+  color:#fff;
+  font-size: 85px;
+  
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+#teg{
+   width: 27px;
+  height: 27px;
+  border-radius: 15% !important;  position:relative;  
+  top: -85.5%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 40%;
+  color:#0e76bc;
+  font-size: 28px;
+  
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+#e{
+   width: 27px;
+  height: 27px;
+  border-radius: 15% !important;  position:relative;  
+  top: -85.5%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 65%;
+  color:#0e76bc;
+  font-size: 28px;
+  
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+#imno{
+   width: 27px;
+  height: 27px;
+  border-radius: 15% !important;  position:relative;  
+  top: -85.5%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  left: 69%;
+  color: #a4cd39;
+  font-size: 28px;
+  
+  -webkit-transition: all 2s ease-in-out;
+  transition-durationion: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+  #imno {-webkit-transition-delay: 2s;transition-delay: 2s;}
+  #e {-webkit-transition-delay: 1.5s;transition-delay: 1.5s;}
+  #teg {-webkit-transition-delay: 1s;transition-delay: 1s;}
+  #letrai1 {-webkit-transition-delay: 0.1s;transition-delay: 0.1s;}
+  #letrap1 {-webkit-transition-delay: 0.2s;transition-delay: 0.2s;}
+  #letrap2 {-webkit-transition-delay: 0.3s;transition-delay: 0.3s;}
+  #letray {-webkit-transition-delay: 0.4s;transition-delay: 0.4s;}
+  #letrat {-webkit-transition-delay: 0.5s;transition-delay: 0.5s;}
+  #letrat2 {-webkit-transition-delay: 0.6s;transition-delay: 0.6s;}
+  #letrae {-webkit-transition-delay: 0.7s;transition-delay: 0.7s;}
+  #letrac{-webkit-transition-delay: 0.8s;transition-delay: 0.8s;}
+   #letrah {-webkit-transition-delay: 0.9s;transition-delay: 0.9s;}
+  #v1,#v2,#v3,#v4,#v5,#v6,#v7,#v8,#v9,#v10,#v11,#v12,#v13,#v14,#v15,#v16,#v17,#v18,#v19,#v20
+  ,#v21,#v22 {-webkit-transition-delay: 0.1s;transition-delay: 0.1s;}
+  #a1,#a2,#a3,#a4,#a5,#a6,#a7,#a8,#a9
+  ,#a10,#a11,#a12,#a13 {-webkit-transition-delay: 0.1s;transition-delay: 0.1s;}
+ 
+
+
+#delay_demo:hover #imno, #delay_demo.hover_effect #letra {
+  -webkit-transform: translate(-4000px,-4400px);
+          transform: translate(-0px,-394px);
+}
+
+#delay_demo:hover #e, #delay_demo.hover_effect #letra {
+  -webkit-transform: translate(-4000px,-4400px);
+          transform: translate(-0px,-367px);
+}
+
+
+#delay_demo:hover #teg, #delay_demo.hover_effect #letra {
+  -webkit-transform: translate(-4000px,-4400px);
+          transform: translate(-0px,-340px);
+}
+
+#delay_demo:hover #letrat, #delay_demo.hover_effect #letra {
+  -webkit-transform: translate(-4000px,-4400px);
+          transform: translate(-0px,-400px);
+}
+
+#delay_demo:hover #letrat2, #delay_demo.hover_effect #letra {
+  -webkit-transform: translate(-4000px,-4400px);
+          transform: translate(-0px,-400px);
+}
+
+#delay_demo:hover #letrae, #delay_demo.hover_effect #letra {
+  -webkit-transform: translate(-4000px,-4400px);
+          transform: translate(-0px,-400px);
+}
+
+#delay_demo:hover #letrac, #delay_demo.hover_effect #letra {
+  -webkit-transform: translate(-4000px,-4400px);
+          transform: translate(-0px,-400px);
+}
+
+#delay_demo:hover #letrah, #delay_demo.hover_effect #letra {
+  -webkit-transform: translate(-4000px,-4400px);
+          transform: translate(-0px,-400px);
+}
+
+
+#delay_demo:hover #letrap1, #delay_demo.hover_effect #letra {
+  -webkit-transform: translate(-4000px,-4400px);
+          transform: translate(-0px,-400px);
+}
+#delay_demo:hover #letrap2, #delay_demo.hover_effect #letra {
+  -webkit-transform: translate(-4000px,-4400px);
+          transform: translate(-0px,-400px);
+}
+#delay_demo:hover #letray, #delay_demo.hover_effect #letra {
+  -webkit-transform: translate(-4000px,-4400px);
+          transform: translate(-0px,-400px);
+} 
+
+#delay_demo:hover #letrai1, #delay_demo.hover_effect #letra {
+  -webkit-transform: translate(-4000px,-4400px);
+          transform: translate(-0px,-400px);
+}
+
+#delay_demo:hover #v1, #delay_demo.hover_effect #v1 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0) rotate(-5deg);
+}
+#delay_demo:hover #v2, #delay_demo.hover_effect #v2 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0) rotate(-5deg);
+             
+}
+#delay_demo:hover #v3, #delay_demo.hover_effect #v3 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0) rotate(-5deg);
+}
+#delay_demo:hover #a1, #delay_demo.hover_effect #a1 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0) rotate(-5deg);
+}
+#delay_demo:hover #a2, #delay_demo.hover_effect #a2 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0) rotate(-5deg) ;
+}
+#delay_demo:hover #v4, #delay_demo.hover_effect #v4 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0) rotate(-5deg) ;
+}
+#delay_demo:hover #a3, #delay_demo.hover_effect #a3 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #v5, #delay_demo.hover_effect #v5 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0) rotate(-5deg) ;
+}
+#delay_demo:hover #v6, #delay_demo.hover_effect #v6 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #a4, #delay_demo.hover_effect #a4 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #v7, #delay_demo.hover_effect #v7 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #v8, #delay_demo.hover_effect #v8 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #v9, #delay_demo.hover_effect #v9 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+
+#delay_demo:hover #a5, #delay_demo.hover_effect #a5 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #a6, #delay_demo.hover_effect #a6 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #a7, #delay_demo.hover_effect #a7 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #a8, #delay_demo.hover_effect #a7 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #a9, #delay_demo.hover_effect #a7 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #a10, #delay_demo.hover_effect #a7 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #a11, #delay_demo.hover_effect #a7 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #a12, #delay_demo.hover_effect #a7 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #a13, #delay_demo.hover_effect #a7 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+
+#delay_demo:hover #a14, #delay_demo.hover_effect #a7 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #a15, #delay_demo.hover_effect #a7 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #a16, #delay_demo.hover_effect #a7 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #v10, #delay_demo.hover_effect #a7 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #v11, #delay_demo.hover_effect #a7 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #v12, #delay_demo.hover_effect #a7 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #v13, #delay_demo.hover_effect #a7 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #v14, #delay_demo.hover_effect #a7 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #v15, #delay_demo.hover_effect #a7 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #v16, #delay_demo.hover_effect #a7 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #v17, #delay_demo.hover_effect #a7 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #v18, #delay_demo.hover_effect #a7 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #v19, #delay_demo.hover_effect #a7 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+
+#delay_demo:hover #v20, #delay_demo.hover_effect #a7 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}
+#delay_demo:hover #v21, #delay_demo.hover_effect #a7 {
+  -webkit-transform: translate(-250px,0);
+          transform: translate(-250px,0)rotate(-5deg);
+}

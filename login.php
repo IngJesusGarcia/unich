@@ -182,7 +182,7 @@ if (isset($_POST["iniciar"])) {
         $bd->consulta($query1);
         if ($nivelusu = $bd->mostrar_registros()) {
 
-            echo  $nivel=$nivelusu->nivel;
+            $nivel = $nivelusu->nivel;
         /* $nivel=$nivelusu['nivel']; */      
                                                 }
         if($nivel==1){
@@ -219,7 +219,7 @@ if (isset($_POST["iniciar"])) {
             $_SESSION['c3_nive_usua'] = $mostrar->nive_usua;
             $_SESSION['c3_correo'] = $mostrar->mail_user;
             $_SESSION['c3_id'] = $mostrar->id_user;
-            $_SESSION['c3_ci'] = $mostrar->ci_user;
+
             $_SESSION['c3_phone'] = $mostrar->phone_user;
                     
             

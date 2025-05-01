@@ -1,5 +1,7 @@
 <?php 
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 //Va guardando toda la salida en una cache
 ob_start();
 include 'config.php';
@@ -34,8 +36,8 @@ if($current_page == 'login.php') {
 	
 } else {
 		
-	if(!($_SESSION['c3valida']))	{
-		$redirect = true;
+	if(!isset($_SESSION['c3valida']) || $_SESSION['c3valida'] !== true)	{
+		die("ID de sesión inválido o no definido.");
 		
    	} else {
 		
@@ -55,8 +57,9 @@ if($current_page == 'login.php') {
 	}
 }
 
-if ($redirect) {
-	header("Location: login.php");
+if (!isset($_SESSION['c3valida']) || $_SESSION['c3valida'] !== true) {
+    header("Location: login.php");
+    exit("ID de sesión inválido o no definido.");
 }
 
 unset($redirect);

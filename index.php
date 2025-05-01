@@ -1,5 +1,7 @@
 <?php 
-
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 include 'inc/comun.php';
 //Datos de configuraci&oacute;n para header
 

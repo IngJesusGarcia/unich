@@ -1,9 +1,18 @@
+
 <?php
+if (session_status() === PHP_SESSION_NONE) {
+  session_start();
+}
+
           $nombrelog  = $_SESSION['c3_nombre']  ?? '';
           $apellidolog = $_SESSION['c3_apellido'] ?? '';
           $maillog    = $_SESSION['c3_correo']   ?? '';
-          $idlog      = $_SESSION['c3_id']       ?? '';
-          $cilog      = $_SESSION['c3_ci']       ?? '';
+          if (!isset($_SESSION['c3_id']) || !is_numeric($_SESSION['c3_id'])) {
+            die('ID de sesión inválido o no definido.');
+        }
+        
+        $idlog = $_SESSION['c3_id'];
+        $cilog      = $_SESSION['c3_ci']       ?? '';
           $phonelog   = $_SESSION['c3_phone']    ?? '';
           $hoy        = date("Y-m-d H:i:s");
           

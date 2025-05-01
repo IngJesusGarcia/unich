@@ -11,35 +11,45 @@ if (session_status() === PHP_SESSION_NONE) {
             die('ID de sesión inválido o no definido.');
         }
         
-        $idlog = $_SESSION['c3_id'];
+        $idlog = isset($_SESSION['c3_id']) ? intval($_SESSION['c3_id']) : 0;
         $cilog      = $_SESSION['c3_ci']       ?? '';
           $phonelog   = $_SESSION['c3_phone']    ?? '';
           $hoy        = date("Y-m-d H:i:s");
           
                         
 
-$consultaadmin="SELECT * FROM empresa INNER JOIN administrador ON administrador.id_administrador = empresa.id_admin_id_empresa 
-                                 INNER JOIN user ON administrador.id_administrador = user.id_admin_id_user where id_admin_id_user=$idlog";
-         $resultadoadmin =$bd-> consulta($consultaadmin); 
-         if ($bd->numeroFilas() > 0 ) { 
-            $bd->consulta($consultaadmin);
-            while ($admin=$bd->mostrar_registros()) {
-                                  $nameadmin= $admin->name_empresa; 
-                                  $diradmin= $admin->dir_empresa; 
-                                  $rifadmin= $admin->rif_empresa;  
-                                  $logoadmin= $admin->logo_empresa;  
-                                  $celadmin= $admin->tel_empresa;  
-                                                    }
+          if ($idlog > 0) {
+            $consultaadmin = "SELECT * FROM empresa 
+                              INNER JOIN administrador ON administrador.id_administrador = empresa.id_admin_id_empresa 
+                              INNER JOIN user ON administrador.id_administrador = user.id_admin_id_user 
+                              WHERE id_admin_id_user = $idlog";
+            $resultadoadmin = $bd->consulta($consultaadmin);
         
-                                        }else{
-                                 $nameadmin= "UNICH"; 
-                                  $diradmin= "Corral de Piedra 2, 29299 San Cristóbal de las Casas, Chis."; 
-                                  $rifadmin= "v-23134135";  
-                                  $logoadmin= "logoc3.png";  
-                                  $celadmin= "967 631 6151";  
-  }
-
-?>
+            if ($bd->numeroFilas() > 0) {
+                while ($admin = $bd->mostrar_registros()) {
+                    $nameadmin = $admin->name_empresa;
+                    $diradmin  = $admin->dir_empresa;
+                    $rifadmin  = $admin->rif_empresa;
+                    $logoadmin = $admin->logo_empresa;
+                    $celadmin  = $admin->tel_empresa;
+                }
+            } else {
+                asignarDatosPorDefecto();
+            }
+        } else {
+            // ID de sesión inválido
+            asignarDatosPorDefecto();
+        }
+        
+        function asignarDatosPorDefecto() {
+            global $nameadmin, $diradmin, $rifadmin, $logoadmin, $celadmin;
+            $nameadmin  = "UNICH";
+            $diradmin   = "Corral de Piedra 2, 29299 San Cristóbal de las Casas, Chis.";
+            $rifadmin   = "v-23134135";
+            $logoadmin  = "logoc3.png";
+            $celadmin   = "967 631 6151";
+        }
+        ?>
 
 
 
